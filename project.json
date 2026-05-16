@@ -1,0 +1,21 @@
+{
+  "overview": "An NFT image gallery where users can upload images, mint them as NFTs, and showcase them in a public gallery. Users log in with Internet Identity to mint and manage their own NFTs.",
+  "features": [
+    "Public NFT gallery viewable by anyone",
+    "Internet Identity login for minting",
+    "Upload images and mint as NFTs with title and description",
+    "Personal collection page to manage your own NFTs",
+    "Edit or delete your minted NFTs",
+    "NFT detail view with full image and metadata"
+  ],
+  "category": "productivity",
+  "tags": [
+    "nft",
+    "gallery",
+    "image",
+    "blockchain",
+    "internet-identity",
+    "object-storage"
+  ],
+  "last_updated": "2026-05-10T10:37:45.676Z"
+}

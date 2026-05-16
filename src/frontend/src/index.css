@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: Figtree;
+    --font-body: General Sans;
+    --font-mono: Geist Mono;
+    --radius: 0.625rem;
+
+    --background: 0.97 0.01 80;
+    --foreground: 0.15 0.02 260;
+    --card: 0.99 0 0;
+    --card-foreground: 0.12 0 0;
+    --popover: 0.99 0 0;
+    --popover-foreground: 0.12 0 0;
+
+    --primary: 0.5 0.2 274;
+    --primary-foreground: 0.97 0.01 80;
+
+    --secondary: 0.3 0.05 260;
+    --secondary-foreground: 0.95 0.01 80;
+    --muted: 0.85 0.02 260;
+    --muted-foreground: 0.5 0.02 260;
+
+    --accent: 0.55 0.18 340;
+    --accent-foreground: 0.97 0.01 80;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.97 0.01 80;
+
+    --border: 0.9 0.02 260;
+    --input: 0.9 0.02 260;
+    --ring: 0.5 0.2 274;
+
+    --chart-1: 0.65 0.25 274;
+    --chart-2: 0.6 0.22 13;
+    --chart-3: 0.75 0.15 80;
+    --chart-4: 0.5 0.2 15;
+    --chart-5: 0.55 0.18 340;
+
+    --sidebar: 0.99 0 0;
+    --sidebar-foreground: 0.12 0 0;
+    --sidebar-primary: 0.5 0.2 274;
+    --sidebar-primary-foreground: 0.97 0.01 80;
+    --sidebar-accent: 0.9 0.02 260;
+    --sidebar-accent-foreground: 0.3 0.05 260;
+    --sidebar-border: 0.9 0.02 260;
+    --sidebar-ring: 0.5 0.2 274;
+  }
+
+  .dark {
+    --background: 0.12 0 0;
+    --foreground: 0.95 0 0;
+    --card: 0.18 0 0;
+    --card-foreground: 0.95 0 0;
+    --popover: 0.22 0 0;
+    --popover-foreground: 0.95 0 0;
+
+    --primary: 0.5 0.2 274;
+    --primary-foreground: 0.95 0 0;
+
+    --secondary: 0.95 0.01 80;
+    --secondary-foreground: 0.12 0 0;
+    --muted: 0.25 0.02 260;
+    --muted-foreground: 0.65 0.01 250;
+
+    --accent: 0.55 0.18 340;
+    --accent-foreground: 0.12 0 0;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.95 0 0;
+
+    --border: 0.2 0.02 260;
+    --input: 0.2 0.02 260;
+    --ring: 0.5 0.2 274;
+
+    --chart-1: 0.65 0.25 274;
+    --chart-2: 0.6 0.22 13;
+    --chart-3: 0.75 0.15 80;
+    --chart-4: 0.5 0.2 15;
+    --chart-5: 0.55 0.18 340;
+
+    --sidebar: 0.18 0 0;
+    --sidebar-foreground: 0.95 0 0;
+    --sidebar-primary: 0.5 0.2 274;
+    --sidebar-primary-foreground: 0.95 0 0;
+    --sidebar-accent: 0.22 0.02 260;
+    --sidebar-accent-foreground: 0.85 0.01 250;
+    --sidebar-border: 0.2 0.02 260;
+    --sidebar-ring: 0.5 0.2 274;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .shadow-gallery {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  .shadow-frame {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  .border-frame {
+    border: 1px solid oklch(var(--border));
+  }
+  .glass-card {
+    background: oklch(var(--card) / 0.95);
+    backdrop-filter: blur(8px);
+  }
+
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
